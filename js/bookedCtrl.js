@@ -9,7 +9,7 @@ angular.module('devmtnTravel').controller('bookedCtrl', function ($scope, mainSr
 	
 	function findBooked() {
 		for (var i = 0; i < cities.length; i++) {
-			if(id === cities[i].id) {
+			if (id === cities[i].id) {
 				$scope.booked = cities[i].city
 			}
 		}

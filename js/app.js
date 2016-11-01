@@ -37,5 +37,5 @@ angular.module('devmtnTravel', ['ui.router'])
 					});
 			
 			$urlRouterProvider
-			 .otherwise('/');
+					.otherwise('/');
 		});
