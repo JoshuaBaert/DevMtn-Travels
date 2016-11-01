@@ -3,33 +3,39 @@ angular.module('devmtnTravel', ['ui.router'])
 			$stateProvider
 					.state('locations', {
 						url: '/locations',
-						templateUrl: "views/locations.html"
+						templateUrl: "views/locations.html",
+						controller: 'locationsCtrl'
 					})
+					
 					.state('packages', {
 						url: '/packages',
-						templateUrl: "views/packages.html"
+						templateUrl: "views/packages.html",
+						controller: 'packagesCtrl'
 					})
-					.state('about', {
-						url: '/about',
-						templateUrl: "views/about.html"
-					})
-					.state('about-adventurers', {
-						url: '/about',
+					
+					.state('adventurers', {
+						url: '/adventurers',
+						parent: 'home',
 						templateUrl: "views/about-adventurers.html"
 					})
+					
 					.state('contact', {
 						url: '/contact',
+						parent: 'home',
 						templateUrl: "views/contact.html"
 					})
+					
 					.state('home', {
 						url: '/',
 						templateUrl: "views/about.html"
 					})
+					
 					.state('booked', {
-						url: '/booked',
-						templateUrl: 'views/booked.html'
+						url: '/booked/:id',
+						templateUrl: 'views/booked.html',
+						controller: 'bookedCtrl'
 					});
 			
-			/*$urlRouterProvider
-			 .otherwise('/');*/
+			$urlRouterProvider
+			 .otherwise('/');
 		});

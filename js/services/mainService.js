@@ -8,7 +8,7 @@ angular.module('devmtnTravel').service('mainSrv', function(){
         id: 112233,
         price: 1345
 
-    }, {
+    },{
         city: 'Paris',
         country: 'France',
         image: "img/Paris.jpg",

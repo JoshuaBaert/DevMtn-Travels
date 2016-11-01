@@ -25,7 +25,7 @@
 
 </head>
 
-<body ng-controller="mainCtrl">
+<body>
 <main role="main">
     <section class="home-page-top-container">
         <header>
@@ -35,7 +35,7 @@
                     <li><a ui-sref="locations">Locations</a></li>
                     <li><a ui-sref="packages">Packages</a></li>
                     <li><a ui-sref="home"><img src="./img/DevCircleWhite.svg" alt="DevMountain Logo"></a></li>
-                    <li><a ui-sref="about">About</a></li>
+                    <li><a ui-sref="home">About</a></li>
                     <li><a ui-sref="contact">Contact</a></li>
                 </ul>
             </nav>
@@ -58,9 +58,10 @@
 
 <!--Our Custom Script Files-->
 <script src="./js/app.js"></script>
-<script src="./js/mainCtrl.js"></script>
+<script src="js/bookedCtrl.js"></script>
+<script src="js/locationsCtrl.js"></script>
+<script src="js/packagesCtrl.js"></script>
 <script src="./js/services/mainService.js"></script>
-
 
 </body>
 </html>
